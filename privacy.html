@@ -95,7 +95,6 @@
         <li><strong>Key Size:</strong> 256 bits (32 bytes)</li>
         <li><strong>Mode:</strong> GCM — provides both confidentiality and authenticated integrity (tamper detection)</li>
         <li><strong>Key Storage:</strong> Encryption keys are stored exclusively in the Apple Keychain with <code>kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly</code> protection class</li>
-        <li><strong>Key Derivation (cross-device sync):</strong> Envelope encryption — the data key is wrapped with a key-encryption key (KEK) derived from the user's UID via HKDF-SHA256 before being stored in Firestore</li>
         <li><strong>Encryption Library:</strong> Apple CryptoKit (<code>AES.GCM</code>) — Apple's on-device, FIPS-validated cryptographic framework</li>
         <li><strong>Thumbnail Cache:</strong> Decrypted thumbnail cache files are also AES-256-GCM encrypted at rest using the same key</li>
         <li><strong>Transport:</strong> All network traffic uses TLS 1.2+ (enforced via App Transport Security; no arbitrary loads are permitted)</li>
@@ -230,16 +229,17 @@
     <ul>
       <li><strong>Developer:</strong> SAS Labs</li>
       <li><strong>Email:</strong> <a href="mailto:saslabs.corp@gmail.com">saslabs.corp@gmail.com</a></li>
-      <li><strong>Privacy Policy URL:</strong> <a href="https://saslabs.github.io/keepsafe/privacy">https://saslabs.github.io/keepsafe/privacy</a></li>
+      <li><strong>Privacy Policy URL:</strong> <a href="https://sasilabs.github.io/keepsafe/privacy">https://sasilabs.github.io/keepsafe/privacy</a></li>
+      <li><strong>Terms of Service URL:</strong> <a href="https://sasilabs.github.io/keepsafe/terms">https://sasilabs.github.io/keepsafe/terms</a></li>
     </ul>
   </div>
 
   <footer>
     <p>© 2026 SAS Labs. All rights reserved. &nbsp;·&nbsp; KeepSafe iOS Application</p>
     <p style="margin-top:8px;">
-      <a href="https://saslabs.github.io/keepsafe/privacy">Privacy Policy</a>
+      <a href="https://sasilabs.github.io/keepsafe/privacy">Privacy Policy</a>
       &nbsp;·&nbsp;
-      <a href="https://saslabs.github.io/keepsafe/terms">Terms of Service</a>
+      <a href="https://sasilabs.github.io/keepsafe/terms">Terms of Service</a>
     </p>
   </footer>
 
